@@ -1,0 +1,9 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: ruby:2.5-slim
+  commands:
+  - bundle install
+  - rake
